@@ -99,8 +99,7 @@ def random_noun():
     num = randint(0, 1)
     if num == 0:
         return 'sofa'
-    if num == 1:
-        return 'llama'
+    return 'llama'
 
 
 print random_noun()
@@ -123,3 +122,22 @@ def random_verb():
     
     
 print random_verb()
+
+
+# Write code for the function word_transformer, which takes in a string word as input. 
+# If word is equal to "NOUN", return a random noun, if word is equal to "VERB", 
+# return a random verb, else return the first character of word. 
+
+
+def word_transformer(word):
+    # your code here
+    if word == 'NOUN':
+        return random_noun()
+    if word == 'VERB':
+        return random_verb()
+    return word[0]
+
+print word_transformer('NOUN')
+
+
+
